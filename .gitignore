@@ -1,0 +1,4 @@
+*.bin
+**/node_modules
+/demo-bv/Frontend/dist/*
+!/demo-bv/Frontend/dist/index.html

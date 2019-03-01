@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>∂ιαℓσσg</title> 
+    <link rel="icon" href="./favicon.png">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="bundle.js"></script>
+  </head>
+  <body style="background-color: #f3f3f3;">
+    
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 mb-3 bg-white border-bottom box-shadow"
+        style="background-color: #4284f3 !important;">
+      <h1 class="my-0 mr-md-auto font-weight-normal" style="color: white; font-size: 60px;">
+        ∂ιαℓσσg 
+        <div style="font-size: 20px !important;">
+            API Demo       
+        </div>
+      </h1>                    
+    </div>
+
+    <div class="container-fluid">            
+        <div class="row">
+            <div class="col-md-6">                              
+                <div class="form-group">
+                    <h5>
+                        Comment Input in German
+                    </h5>              
+                    <textarea class="form-control" rows="5" id="comment-german" style="height: 130px;"></textarea>
+                </div> 
+            </div> 
+            <div class="col-md-6">                 
+                <div class="form-group">              
+                    <h5>
+                        Translated Comment in English
+                    </h5>
+                    <div id="comment-english">                      
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row" id="ner" style="display: none;">
+            <div class="col-md-6">                
+                <div class="form-group">              
+                    <h5>
+                        Named Entity in German
+                    </h5>
+                    <div id="ner-german">                                                                   
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-6">                 
+                <div class="form-group">              
+                    <h5>
+                        Translated Named Entity in English
+                    </h5>
+                    <div id="ner-english">                                              
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="row" id="classification" style="display: none;">
+            <div class="col-md-6">                
+                <div class="form-group">              
+                    <h5>
+                        Comment Label
+                    </h5>
+                    <div id="classification-label">
+                    </div>
+                </div>
+                <div class="form-group">              
+                    <h5>
+                        Confidence
+                    </h5>
+                    <div class="progress" id="classification-confidence">                        
+                    </div>       
+                </div>
+            </div> 
+            <div class="col-md-6">                 
+                <div class="form-group">              
+                    <h5>
+                        JSON Output
+                    </h5>
+                    <div id="classification-json"> 
+                        <pre id="classification-json"></pre>                                             
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+  </body>
+</html>
